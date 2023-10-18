@@ -36,6 +36,7 @@ Include( KDECompilerSettings NO_POLICY_SCOPE )
 
 Find_Package( KF5 REQUIRED COMPONENTS KIO )
 Find_Package( SharedMimeInfo REQUIRED )
+FIND_PACKAGE(PkgConfig REQUIRED)
 Pkg_Check_Modules( VTFLIB REQUIRED VTFLib )
 
 File( GLOB_RECURSE VTFTHUMBCREATOR_SRC "${CMAKE_CURRENT_SOURCE_DIR}/code/**" )
